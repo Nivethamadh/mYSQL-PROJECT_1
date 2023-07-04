@@ -1,0 +1,31 @@
+-- 1. switch to the mec database
+use mec;
+show tables;
+-- 2. create the mec database
+create database mec;
+-- 3. create the mec table 
+create table mec.student(
+serialnumber int,
+rollnumber int,
+name varchar(20),
+department varchar(20),
+collegename varchar(20),
+place varchar(20)
+);
+use mec;
+show tables;
+-- 4. retrieve all records from the mec table
+select*from mec.student;
+select rollnumber from mec.student;
+-- 5. insert records into the mec table
+insert into mec.student values 
+(1,20026,"Nivetha","BTH","MEc","Dharmapuri"),
+(2,20027,"Sarathi","BTH","MEC","Hosur"),
+(3,20028,"Gpika","ECE","MEC","Nammakal"),
+(4,20029,"Abirami","EEE","MEC","Chennai"),
+(5,20030,"Arul","BME","MEC","Mumbai"),
+(6,20031,"Jayachitra","MEC","mec","Delhi"),
+(7,20032,"Madhu","ADE","MEC","Covai"),
+(8,20033,"Vimala","ECE","MEC","Ooty"),
+(9,20009,"Priya","EEE","MEC","Trichy"),
+(10,20010,"Aarav","BME","MEC","Salem");
